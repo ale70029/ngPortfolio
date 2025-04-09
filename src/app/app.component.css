@@ -1,0 +1,21 @@
+.toolbar {
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a{
+            font-size: large;
+        }
+   
+    
+    }
+
+
+    .title {
+        color: var(--color-accent);
+    }
+
+    .spacer {}
+}
