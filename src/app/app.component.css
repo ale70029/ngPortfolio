@@ -4,18 +4,18 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 20px;
 
         a{
-            font-size: large;
+            color: var(--color-main);
+            font-family: "Jura";
+            font-size:22px;
+            text-decoration: none;
         }
-   
-    
+
+        a:hover{
+            color: var(--color-accent);
+        }
     }
 
-
-    .title {
-        color: var(--color-accent);
-    }
-
-    .spacer {}
 }

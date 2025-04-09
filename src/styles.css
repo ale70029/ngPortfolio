@@ -1,8 +1,9 @@
 /* Colors */
 :root{
     color: white;
-    --color-main: rgb(26,26,26);
-    --color-accent: #0b32cd;
+    --color-bg: rgb(26,26,26);
+    --color-main: rgb(214, 132, 0);
+    --color-accent: rgb(255, 175, 27);
 }
 
 
@@ -15,5 +16,5 @@ body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: var(--color-main);
+    background-color: var(--color-bg);
 }
