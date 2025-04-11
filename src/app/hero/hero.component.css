@@ -1,27 +1,37 @@
 .hero {
     height: 100%;
-    background: linear-gradient(to right, var(--color-main)35%, var(--color-bg) 35%);
-
     display: flex;
     flex-direction: row;
-}
 
-.profilePicture {
-    height: 500px;
-    position: absolute;
-    left: 35%;
-    top: 20%;
-    transform: translateX(-50%);
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.107);
-}
+    .leftContainer{
+        background-color: var(--color-main);
+        width: 30%;
+    
+        .profilePicture {
+            height: 450px;
+            position: absolute;
+            left: 30%;
+            top: 20%;
+            transform: translateX(-50%);
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.150);
+        }
+    }
+    
+    .rightContainer{
+        background-color: var(--color-bg);
+        width: 70%;
+        
 
-.title{
-
-    font-size: 120px;
-    margin-left: 50%;
-    margin-top: 10%;
-    font-family: "Jura";
+        .title{
+            text-align: center;
+            font-family: "Monoton";
+            font-size: 100px;
+            margin-left: 10%;
+            margin-top: 15%;
+        }
+    }
     
 }
+
