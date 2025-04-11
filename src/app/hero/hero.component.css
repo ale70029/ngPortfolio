@@ -22,7 +22,6 @@
     .rightContainer{
         background-color: var(--color-bg);
         width: 70%;
-        
 
         .title{
             text-align: center;
@@ -31,7 +30,6 @@
             margin-left: 10%;
             margin-top: 15%;
         }
-    }
-    
+    } 
 }
 
