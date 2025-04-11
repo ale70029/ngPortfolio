@@ -1,8 +1,12 @@
 .toolbar {
-
     position: fixed;
     top: 0;
     z-index: 1;
+    
+    background-color: var(--color-bg);
+    backdrop-filter: blur(10px); 
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     .links {
         display: flex;
@@ -13,7 +17,8 @@
         a{
             color: var(--color-main);
             font-family: "Jura";
-            font-size:22px;
+            font-size:27px;
+            font-weight: 500;
             text-decoration: none;
         }
 
@@ -21,6 +26,5 @@
             color: var(--color-accent);
         }
     }
-
 }
 

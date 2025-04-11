@@ -9,11 +9,9 @@ import { ImagesService } from '../../services/images.service';
 })
 export class HeroComponent {
 
-  profilePic!:string;
+  name = "ALESSANDRO CICCARONE"
 
-  constructor(private imagesService: ImagesService){
-    this.profilePic = imagesService.getImagePath("hero-about/heroImage.png")
-  }
+  constructor(){}
 
   
 
