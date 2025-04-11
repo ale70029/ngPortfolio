@@ -2,7 +2,8 @@
 :root{
     color: white;
     --color-bg: rgb(26,26,26);
-    --color-main: rgb(214, 132, 0);
+    --color-main: rgb(220, 107, 1);
+
     --color-accent: rgb(255, 175, 27);
 }
 

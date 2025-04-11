@@ -1,13 +1,18 @@
 .hero {
     height: 100%;
-    background: linear-gradient(to right, rgb(220, 107, 1) 35%, rgb(27, 27, 27) 35%);
+    background: linear-gradient(to right, var(--color-main)35%, var(--color-bg) 35%);
 
     display: flex;
     flex-direction: row;
 }
 
 .profilePicture {
-    padding-left: 26%;
-    margin-top: 10%;
- height: 50%;
+    height: 60%;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.107);
 }
