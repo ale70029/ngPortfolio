@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
-import { HeroComponent } from './hero/hero/hero.component';
-import { AboutComponent } from './about/about/about.component';
-import { ExperienceComponent } from './experience/experience/experience.component';
-import { ProjectsComponent } from './projects/projects/projects.component';
-import { ContactsComponent } from './contacts/contacts/contacts.component';
-import { SkillsComponent } from './skills/skills/skills.component';
-import { NotFoundComponent } from './notFound/not-found/not-found.component';
+import { HeroComponent } from './hero/hero.component';
+import { AboutComponent } from './about/about.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { SkillsComponent } from './skills/skills.component';
+import { NotFoundComponent } from './notFound/not-found.component';
 
 export const routes: Routes = [
     { path: 'home', component: HeroComponent },

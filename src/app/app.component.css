@@ -1,5 +1,9 @@
 .toolbar {
 
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
     .links {
         display: flex;
         align-items: center;
@@ -19,3 +23,4 @@
     }
 
 }
+
