@@ -12,7 +12,7 @@
                 "en": "I can develop applications using Java, Python and C#. ",
                 "es": "Puedo desarrollar aplicaciones utilizando Java, Python y C#."
             },
-        "icon": "about/backend.png"
+        "icon": "assets/about/backend.png"
     },
     
     {
@@ -28,7 +28,7 @@
                 "en": "I can develop web pages like this, using HTML, CSS, JavaScript and React. ",
                 "es": "Puedo desarrollar páginas web como esta utilizando HTML, CSS, JavaScript y React."
             },
-        "icon": "about/frontend.png"
+        "icon": "assets/about/frontend.png"
     },
 
     {
@@ -44,7 +44,7 @@
                 "en": "I can create reports by collecting and analyzing data using SQL, Excel, PowerBI, and Looker Studio.",
                 "es": "Puedo crear informes recopilando y analizando datos utilizando SQL, Excel, PowerBI y Looker Studio."
             },
-        "icon": "about/data.png"
+        "icon": "assets/about/data.png"
     },
 
     {
@@ -60,7 +60,7 @@
                 "en": "I can design UIs with Figma and create graphics with Photoshop.",
                 "es": "Puedo diseñar interfaces gráficas con Figma y crear diseños gráficos con Photoshop."
             },
-        "icon": "about/graphic.png"
+        "icon": "assets/about/graphic.png"
     },
 
     {
@@ -76,6 +76,6 @@
                 "en": "Italian is my native language, but I also speak English and Spanish fluently,\nlanguages I was able to improve by living in London and Barcelona.",
                 "es": "El Italiano es mi lengua materna, pero también hablo Inglés y Español con fluidez,\nidiomas que pude mejorar viviendo en Londres y Barcelona."
             },
-        "icon": "about/languages.png"
+        "icon": "assets/about/languages.png"
     }
 ]

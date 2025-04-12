@@ -1,1 +1,10 @@
-<p>about works!</p>
+
+<div class="about">
+    <ul class="roles">
+        <li class="role" *ngFor="let about of aboutData">
+            <img src={{about.icon}} alt="icon" />
+            <h1>{{about.title["it"]}}</h1>
+            <p>{{about.description["it"]}}</p>
+        </li>
+    </ul>    
+</div>
