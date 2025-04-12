@@ -1,13 +1,29 @@
-<!-- MOBILE -->
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #sidenav class="sidenav" mode="over" [opened]="false">
-    <mat-nav-list>
-      <a mat-list-item routerLink="/home" (click)="sidenav.close()">Home</a>
-      <a mat-list-item routerLink="/about" (click)="sidenav.close()">About</a>
-      <a mat-list-item routerLink="/experience" (click)="sidenav.close()">Experience</a>
-      <a mat-list-item routerLink="/skills" (click)="sidenav.close()">Skills</a>
-      <a mat-list-item routerLink="/projects" (click)="sidenav.close()">Projects</a>
-      <a mat-list-item routerLink="/contacts" (click)="sidenav.close()">Contacts</a>
+    <mat-nav-list> <!-- MOBILE SIDEBAR LINKS-->
+      <a mat-list-item routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        (click)="sidenav.close() ">
+        Home</a>
+
+      <a mat-list-item routerLink="/about" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        (click)="sidenav.close()">
+        About</a>
+
+      <a mat-list-item routerLink="/experience" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        (click)="sidenav.close()">
+        Experience</a>
+
+      <a mat-list-item routerLink="/skills" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        (click)="sidenav.close()">
+        Skills</a>
+
+      <a mat-list-item routerLink="/projects" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        (click)="sidenav.close()">
+        Projects</a>
+
+      <a mat-list-item routerLink="/contacts" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        (click)="sidenav.close()">
+        Contacts</a>
     </mat-nav-list>
   </mat-sidenav>
 
@@ -17,15 +33,16 @@
         <mat-icon>menu</mat-icon>
       </button>
 
-      <!-- ONLY DESKTOP -->
+      <!-- DESKTOP LINKS -->
       <div class="links">
-        <a routerLink="/home">Home</a>
-        <a routerLink="/about">About</a>
-        <a routerLink="/experience">Experience</a>
-        <a routerLink="/skills">Skills</a>
-        <a routerLink="/projects">Projects</a>
-        <a routerLink="/contacts">Contacts</a>
+        <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About</a>
+        <a routerLink="/experience" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Experience</a>
+        <a routerLink="/skills" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Skills</a>
+        <a routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Projects</a>
+        <a routerLink="/contacts" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Contacts</a>
       </div>
+      
     </mat-toolbar>
 
     <router-outlet></router-outlet>
