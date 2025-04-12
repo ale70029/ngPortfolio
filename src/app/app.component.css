@@ -51,9 +51,11 @@
         color: var(--color-bg);
     }
 
+
     .toolbar{
+        margin-top: 10px;
         justify-content: left;
-        background-color: var(--color-main);
+        background-color: transparent;
         backdrop-filter: none;
         box-shadow:none;
     }

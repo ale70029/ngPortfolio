@@ -16,3 +16,19 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
     background-color: var(--color-bg);
 }
+
+/* ANIMATIONS */
+.fadeIn {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
