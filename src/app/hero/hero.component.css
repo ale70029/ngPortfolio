@@ -1,4 +1,4 @@
-.landscapeError{
+.landscapeError {
     display: none;
 }
 
@@ -7,77 +7,80 @@
     display: flex;
     flex-direction: row;
 
-    .leftContainer {
-        background-color: var(--color-main);
-        width: 30%;
+    background: linear-gradient(to right, var(--color-main) 25%, var(--color-bg) 25%);
 
-        .profilePicture {
-            height: 60%;
-            position: absolute;
-            left: 30%;
-            top: 20%;
-            transform: translateX(-50%);
-            object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.150);
-        }
+    .profilePicture {
+        height: 60%;
+        position: absolute;
+        left: 27%;
+        top: 20%;
+        transform: translateX(-50%);
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.150);
+    }
 
-        .links {
-            position: absolute;
+    .links {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        bottom: 5%;
+        margin-left: 30px;
+        gap: 20px;
+
+
+        a {
             display: flex;
             flex-direction: row;
-            bottom: 5%;
-            margin-left: 30px;
-            gap: 20px;
+            align-items: center;
 
+            color: var(--color-bg);
+            text-decoration: none;
+            font-family: "Jura";
+            font-weight: bold;
+            font-size: 20px;
 
-            a {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-
-                color: var(--color-bg);
-                text-decoration: none;
-                font-family: "Jura";
-                font-weight: bold;
-                font-size: 20px;
-
-                img {
-                    filter: invert(100%);
-                }
+            img {
+                filter: invert(100%);
             }
         }
     }
 
-    .rightContainer {
-        background-color: var(--color-bg);
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .title {
+        text-align: center;
+        font-family: "Monoton";
+        font-size: 100px;
+        margin-left: 35%;
+        margin-top: 6%;
 
-        .title {
-            text-align: center;
-            font-family: "Monoton";
-            font-size: 100px;
-            margin-left: 10%;
-            margin-top: 15%;
-        }
-        .buttons{
-            display: flex;
-            flex-direction: row;
-            
-            gap: 5%;
-        }
-        .customButton{
-            background-color: var(--color-main);
-            border: none;
+        p {
+            font-size: 40px;
             font-family: "Jura";
-            color: var(--color-bg);
-            width: 200px;
-            
+            margin-bottom: 0;
         }
+
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        gap: 5%;
+    }
+
+    .customButton {
+        background-color: var(--color-main);
+        border: none;
+        font-size: 18px;
+        font-family: "Jura";
+        color: var(--color-bg);
+        width: 200px;
+    }
+
+    .customButton:hover{
+        background-color: var(--color-accent);
+        color: white;
     }
 }
 
@@ -87,73 +90,82 @@
 /* MOBILE */
 @media screen and (max-width: 830px) {
 
-    .hero{
+    .hero {
         flex-direction: column;
         justify-content: center;
-        background-color: var(--color-main);
+        align-items: center;
         height: 100%;
+        width: 100%;
         gap: 100px;
 
+        background: var(--color-main);
 
-        .leftContainer{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            
-            .profilePicture{
-                height: 42%;
-                left: 50%;
-                top: 10%;
-                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.150);
-            }
-
-            .links{
-                margin-left: auto;
-            }
-          
+        .profilePicture {
+            height: 38%;
+            left: 50%;
+            top: 10%;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.150);
         }
-        .rightContainer{
-            background-color: var(--color-main);
-            width: 100%;
-            margin-top: 20%;
 
-            .title{
-                font-size: 40px;
-                margin-left: 0;
-            }
+        .links {
+            margin-left: 0;
+        }
 
-            .buttons{
-                flex-direction: column;
-                align-items: center;
-                margin-left: 0%;
-        
-                .customButton{
-                    background-color: var(--color-bg);
-                    color: var(--color-main);
-                    font-size: large;
-                    
-                }
+        .title {
+            font-size: 40px;
+            margin-left: 0;
+            margin-top: 55%;
+
+            p {
+                font-size: 30px;
             }
         }
-        
+
+        .buttons {
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0%;
+            gap: 10px;
+
+
+            .customButton {
+                background-color: var(--color-bg);
+                color: var(--color-main);
+                font-size: large;
+
+            }
+        }
+
     }
 }
 
 /* MOBILE LANDSCAPE */
-@media screen and (max-width: 830px) and (orientation:landscape){
-    .hero{
-        display: none;
+@media screen and (max-width: 830px) and (orientation:landscape) {
+   .hero{
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
+
+    .profilePicture {
+        height: auto;
+        width: 30%;
+        transform: translateX(-90%);
+        position: relative;
+        left: 27%;
+        margin-top: 10%;
     }
 
-    .landscapeError{
-        display: flex;
-        justify-content: center;
-
-        p{
-            margin-top: 15%;
-            font-size: 50px;
-        }
+    .links{
+        top: 120%;
     }
 
-   
-} 
+    .title{
+        margin-top:0px;
+        margin-bottom: 4%;
+    }
+   }
+
+}
