@@ -3,7 +3,8 @@
     color: white;
     --color-bg: rgb(26,26,26);
     --color-main: rgb(220, 107, 1);
-    --color-accent: rgb(255, 175, 27);
+    --color-accent: rgb(218, 87, 12);
+    --color-soft : rgb(243, 137, 37) ;
 }
 
 html,

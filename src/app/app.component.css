@@ -32,11 +32,12 @@
     gap: 20px;
 
     a {
-        color: var(--color-main);
-        font-family: "Jura";
-        font-size: 27px;
-        font-weight: 500;
+        color: var(--color-soft);
+        font-family: "Roboto";
+        font-size: 20px;
+
         text-decoration: none;
+        text-transform: uppercase;
     }
 
     a:hover {
