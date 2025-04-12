@@ -52,6 +52,10 @@
     .rightContainer {
         background-color: var(--color-bg);
         width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .title {
             text-align: center;
@@ -63,14 +67,16 @@
         .buttons{
             display: flex;
             flex-direction: row;
-            margin-left: 30%;
+            
+            gap: 5%;
         }
         .customButton{
             background-color: var(--color-main);
             border: none;
             font-family: "Jura";
-            font-weight: bold;
             color: var(--color-bg);
+            width: 200px;
+            
         }
     }
 }
