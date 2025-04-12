@@ -3,7 +3,7 @@
     color: white;
     --color-bg: rgb(26,26,26);
     --color-main: rgb(220, 107, 1);
-    --color-accent: rgb(218, 87, 12);
+    --color-accent: rgb(255, 182, 56);
     --color-soft : rgb(243, 137, 37) ;
 }
 
@@ -21,7 +21,7 @@ body {
 /* ANIMATIONS */
 .fadeIn {
     opacity: 0;
-    animation: fadeInAnimation 1s ease-in forwards;
+    animation: fadeInAnimation 2s ease-in forwards;
 }
 
 @keyframes fadeInAnimation {
