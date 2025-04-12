@@ -70,7 +70,7 @@
     }
 
     .customButton {
-        background-color: var(--color-main);
+        background-color: var(--color-soft);
         border: none;
         font-size: 18px;
         font-family: "Jura";

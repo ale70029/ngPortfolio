@@ -6,10 +6,10 @@ import { Observable } from 'rxjs';  // Importa Observable
   providedIn: 'root'
 })
 export class DataService {
-
+public lang = "it";
 constructor(private http: HttpClient) {}
 
-  loadJson(path:string): Observable<any> {
-    return this.http.get<any>(path);
+  loadJson(path:string) {
+    return this.http.get(path);
   }
 }

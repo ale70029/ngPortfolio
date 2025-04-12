@@ -1,0 +1,108 @@
+[
+  {
+    "role": "Sviluppatore Fullstack",
+    "organisation": "ENAIP Nazionale Impresa Sociale",
+    "startDate": "07/2024",
+    "endDate": "10/2024",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "C#",
+      "ASP.NET MVC",
+      "jQuery",
+      "SQL / T-SQL",
+      "SQL Server",
+      "Life Skills"
+    ],
+    "details": [
+      "Progettazione di pagine web utilizzando HTML, React, JavaScript, CSS",
+      "lmplementazione di applicazioni web che seguono il modello ASP.NET MVC,utilizzando C# e JQuery",
+      "Gestione Database attraverso T-SQL e SQL Server Management Studio",
+      "Laboratorio life skills [60h]"
+    ],
+    "imageSrc": "assets/experience/enaip.png"
+  },
+  {
+    "role": "Analista di dati",
+    "organisation": "Epicode",
+    "startDate": "02/2023",
+    "endDate": "09/2023",
+    "skills": [
+      "SQL",
+      "Microsoft Excel + Pivot",
+      "Python + Jupyter Notebook",
+      "Microsoft Power BI",
+      "Google Looker Studio",
+      "Microsoft Access"
+    ],
+    "details": [
+      "Utilizzo avanzato di Microsoft Excel, tabelle e grafici Pivot, colonne calcolate",
+      "Gestione Database attraverso SQL, SSMS, Microsoft Access",
+      "Studio approfondito di Database Relazionali",
+      "Elaborazione dati attraverso codice Python utilizzando Jupyter Notebook",
+      "Web Scraping e studio delle licenze dati",
+      "Produzione di report con Microsoft Power BI e Google Looker Studio"
+    ],
+    "imageSrc": "assets/experience/epicode.png"
+  },
+  {
+    "role": "Vari Corsi",
+    "organisation": "Udemy",
+    "startDate": "2022",
+    "endDate": "",
+    "skills": [
+      "Python",
+      "MVC Pattern",
+      "ASP.NET MVC",
+      "Entity Framework",
+      "SQL Server",
+      "React",
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "details": [
+      "ASP.NET MVC Complete Guide using .NET Core [.NET8 Updated]",
+      "The Python Mega Course: Build 10 Real World Applications",
+      "React JS Frontend Web Development for Beginners"
+    ],
+    "imageSrc": "assets/experience/udemy.png"
+  },
+  {
+    "role": "Informatica",
+    "organisation": "Sapienza",
+    "startDate": "09/2023",
+    "endDate": "In corso",
+    "skills": [
+      "Java",
+      "Python",
+      "MVC Pattern",
+      "UML"
+    ],
+    "details": [
+      "Metodologie di programmazione (Java, MVC Pattern) [30L]",
+      "Fondamenti di programmazione (Python) [30L]",
+      "Metodi matematici per l'informatica [28]",
+      "Lingua Inglese [Idoneo]"
+    ],
+    "imageSrc": "assets/experience/sapienza.png"
+  },
+  {
+    "role": "Tecnico Grafico Pubblicitario",
+    "organisation": "IISS Rosa Luxemburg",
+    "startDate": "09/2008",
+    "endDate": "07/2013",
+    "skills": [
+      "Adobe Photoshop",
+      "Adobe Illustrator"
+    ],
+    "details": [
+      "Studio approfondito di Adobe Photoshop",
+      "Progettazione e realizzazione di loghi, manifesti, brochure, cartelloni pubblicitari, packaging di prodotti e materiali promozionali",
+      "Studio ed applicazione di tecniche fotografiche"
+    ],
+    "imageSrc": "assets/experience/minIstr.png"
+  }
+]

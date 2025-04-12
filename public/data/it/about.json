@@ -1,0 +1,31 @@
+[
+    {
+        "title":"Sviluppatore Backend",    
+        "description":"Posso sviluppare applicazioni con Java, Python e C#.",
+        "icon": "assets/about/backend.png"
+    },
+    
+    {
+        "title":"Sviluppatore Frontend",
+        "description":"Posso sviluppare pagine web come questa, usando HTML, CSS, JavaScript e React.",
+        "icon": "assets/about/frontend.png"
+    },
+
+    {
+        "title":"Analista di dati",
+        "description":"Posso creare report raccogliendo dati ed elaborandoli con SQL, Excel, PowerBI e Looker Studio.",
+        "icon": "assets/about/data.png"
+    },
+
+    {
+        "title":"Grafico",
+        "description":"Posso progettare interfacce grafiche con FIgma e creare grafiche con Photoshop.",
+        "icon": "assets/about/graphic.png"
+    },
+
+    {
+        "title":"Lingue",
+        "description":"L'Italiano è la mia lingua madre ma parlo fluentemente anche Inglese e Spagnolo, lingue che ho potuto migliorare vivendo a Londra e Barcellona.",
+        "icon": "assets/about/languages.png"
+    }
+]
