@@ -1,5 +1,4 @@
-import { NgIf } from '@angular/common';
-import { AfterViewChecked, AfterViewInit, Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-hero',

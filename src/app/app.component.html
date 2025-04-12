@@ -1,12 +1,33 @@
-  <mat-toolbar class="toolbar">
-    <div class="links">
-      <a routerLink="/home">Home</a>
-      <a routerLink="/about">About</a>
-      <a routerLink="/experience">Experience</a>
-      <a routerLink="/skills">Skills</a>
-      <a routerLink="/projects">Projects</a>
-      <a routerLink="/contacts">Contacts</a>
-    </div>
-  </mat-toolbar>
-  
-  <router-outlet class="router"></router-outlet>
+<!-- MOBILE -->
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav class="sidenav" mode="over" [opened]="false">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/home" (click)="sidenav.close()">Home</a>
+      <a mat-list-item routerLink="/about" (click)="sidenav.close()">About</a>
+      <a mat-list-item routerLink="/experience" (click)="sidenav.close()">Experience</a>
+      <a mat-list-item routerLink="/skills" (click)="sidenav.close()">Skills</a>
+      <a mat-list-item routerLink="/projects" (click)="sidenav.close()">Projects</a>
+      <a mat-list-item routerLink="/contacts" (click)="sidenav.close()">Contacts</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar class="toolbar">
+      <button mat-icon-button (click)="sidenav.toggle()" class="menu-button">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <!-- ONLY DESKTOP -->
+      <div class="links">
+        <a routerLink="/home">Home</a>
+        <a routerLink="/about">About</a>
+        <a routerLink="/experience">Experience</a>
+        <a routerLink="/skills">Skills</a>
+        <a routerLink="/projects">Projects</a>
+        <a routerLink="/contacts">Contacts</a>
+      </div>
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
