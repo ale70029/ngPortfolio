@@ -1,1 +1,15 @@
-<p>skills works!</p>
+<div class="skills fadeIn">
+    <ul class="skillsContainer">
+      <li class="skill" *ngFor="let skill of skillsData$ | async">
+        <img [src]="skill.imageSrc" alt="icon" />
+        <h1>{{ skill.title}}</h1>
+      </li>
+    </ul>
+  </div>
+
+  <!-- {
+    "title": "Java",
+    "imageSrc": "skills/java.png",
+    "level" : "advanced",
+    "area" : "Backend"
+}, -->
