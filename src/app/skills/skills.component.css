@@ -20,12 +20,13 @@
 
         background-color: var(--color-main);
         border-radius: 5%;
-        background-color: rgba(0, 0, 0, 0.397);
-        backdrop-filter: saturate(180%) blur(10px);
+        background-color: rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(10px);
 
         img {
             width: 50%;
             margin: 10%;
+
         }
 
         h1 {
@@ -50,6 +51,8 @@
         .skill{
             width: 40%;
             height: 200px;
+
+            background-color: rgba(0, 0, 0, 0.25);
 
             img{
                 width: 80px;

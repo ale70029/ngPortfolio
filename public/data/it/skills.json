@@ -104,13 +104,6 @@
     },
 
     {
-        "title": "Git",
-        "imageSrc": "assets/skills/git.png",
-        "level" : "intermediate",
-        "area" : "Backend"
-    },
-
-    {
         "title": "MVC Pattern",
         "imageSrc": "assets/skills/MVC.png",
         "level" : "advanced",
@@ -122,6 +115,13 @@
         "imageSrc": "assets/skills/looker.png",
         "level" : "advanced",
         "area" : "Data"
+    },
+
+    {
+        "title": "Git",
+        "imageSrc": "assets/skills/git.png",
+        "level" : "intermediate",
+        "area" : "Backend"
     },
 
     {
