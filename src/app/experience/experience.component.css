@@ -1,8 +1,8 @@
 .experience {
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 33%);
-        margin-inline: 10%;
+        grid-template-columns: repeat(auto-fill, 30%);
+        margin-inline: 2% auto;
         margin-top: 5%;
         align-items: center;
         justify-content: center;
@@ -19,7 +19,6 @@
             
 
             .header {
-
                 img {
                     width: 110%;
                 }

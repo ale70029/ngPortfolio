@@ -30,17 +30,17 @@
             flex-direction: row;
             align-items: center;
 
-            color: var(--color-bg);
-            text-decoration: none;
-            font-family: "Jura";
-            font-weight: bold;
-            font-size: 20px;
-
             img {
                 filter: invert(100%);
             }
         }
+        a:hover {
+            img {
+                filter: none;
+            }
+        }
     }
+
 
     .title {
         text-align: center;
@@ -74,7 +74,7 @@
         width: 200px;
     }
 
-    .customButton:hover{
+    .customButton:hover {
         background-color: var(--color-accent);
         color: white;
     }
@@ -137,31 +137,31 @@
 
 /* MOBILE LANDSCAPE */
 @media screen and (max-width: 830px) and (orientation:landscape) {
-   .hero{
-    height: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 100px;
-
-    .profilePicture {
+    .hero {
         height: auto;
-        width: 30%;
-        transform: translateX(-90%);
-        position: relative;
-        left: 27%;
-        margin-top: 10%;
-    }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 100px;
 
-    .links{
-        top: 120%;
-    }
+        .profilePicture {
+            height: auto;
+            width: 30%;
+            transform: translateX(-90%);
+            position: relative;
+            left: 27%;
+            margin-top: 10%;
+        }
 
-    .title{
-        margin-top:0px;
-        margin-bottom: 4%;
+        .links {
+            top: 120%;
+        }
+
+        .title {
+            margin-top: 0px;
+            margin-bottom: 4%;
+        }
     }
-   }
 
 }

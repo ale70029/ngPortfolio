@@ -21,7 +21,7 @@ body {
 /* ANIMATIONS */
 .fadeIn {
     opacity: 0;
-    animation: fadeInAnimation 1s ease-in forwards;
+    animation: fadeInAnimation 0.5s ease-in forwards;
 }
 
 @keyframes fadeInAnimation {
