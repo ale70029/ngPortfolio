@@ -1,24 +1,23 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #sidenav class="sidenav" mode="over" [opened]="false">
-    <mat-nav-list> <!-- MOBILE SIDEBAR LINKS-->
-      <a mat-list-item routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+    <mat-nav-list class="routeList"> <!-- MOBILE SIDEBAR LINKS-->
+      <a routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
         (click)="sidenav.close() ">
         Home</a>
 
-
-      <a mat-list-item routerLink="/experience" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+      <a routerLink="/experience" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
         (click)="sidenav.close()">
         Experience</a>
 
-      <a mat-list-item routerLink="/skills" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+      <a routerLink="/skills" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
         (click)="sidenav.close()">
         Skills</a>
 
-      <a mat-list-item routerLink="/projects" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+      <a routerLink="/projects" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
         (click)="sidenav.close()">
         Projects</a>
 
-      <a mat-list-item routerLink="/contacts" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+      <a routerLink="/contacts" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
         (click)="sidenav.close()">
         Contacts</a>
     </mat-nav-list>
