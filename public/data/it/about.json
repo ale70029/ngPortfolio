@@ -1,24 +1,24 @@
 [
     {
-        "title":"Sviluppatore Backend",    
+        "title":"Sviluppo Backend",    
         "description":"Posso sviluppare applicazioni con Java, Python e C#.",
         "icon": "assets/about/backend.png"
     },
     
     {
-        "title":"Sviluppatore Frontend",
-        "description":"Posso sviluppare pagine web come questa, usando HTML, CSS, JavaScript e React.",
+        "title":"Sviluppo Frontend",
+        "description":"Posso sviluppare pagine web come questa, usando HTML, CSS, JavaScript, React e Angular.",
         "icon": "assets/about/frontend.png"
     },
 
     {
-        "title":"Analista di dati",
+        "title":"Analisi di dati",
         "description":"Posso creare report raccogliendo dati ed elaborandoli con SQL, Excel, PowerBI e Looker Studio.",
         "icon": "assets/about/data.png"
     },
 
     {
-        "title":"Grafico",
+        "title":"Grafica",
         "description":"Posso progettare interfacce grafiche con FIgma e creare grafiche con Photoshop.",
         "icon": "assets/about/graphic.png"
     },
