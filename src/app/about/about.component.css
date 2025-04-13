@@ -1,73 +1,66 @@
-.roles{
-   display: grid;
-   grid-template-columns: repeat(auto-fill,430px);
-   padding: 50px;
-   gap: 50px;
-   justify-content: center;
-   margin-top: 4%;
+.roles {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fill, 30%);
+    padding: 50px;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 4%;
+
+    .role {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        border-radius: 5%;
+        background-color: rgba(0, 0, 0, 0.25);
+
+        img {
+            width: 90px;
+            margin: 10px;
+            filter: hue-rotate(-40deg);
+
+        }
+
+        h1 {
+
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--color-soft);
+        }
+
+        p {
+            font-size: 22px;
+            font-family: "Jura";
+        }
+
+    }
 }
 
-.role{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    background-color: var(--color-main);
-    border-radius: 5%;
-    background-color:rgba(0, 0, 0, 0.25) ;
-    backdrop-filter:saturate(180%) blur(10px);
-    padding: 30px;
-
-    
-    
-
-
-    img{
-        width: 90px;
-        margin: 10px;
-        filter: hue-rotate(-40deg);
-
-    }
-
-    h1{
-       
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 32px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: var(--color-soft);
-        
-    }
-
-    p{
-   
-        font-size: 22px;
-  
-        font-family: "Jura";
-    }
-    
-}
 
 
 /* MOBILE */
 
 @media screen and (max-width:830px) {
 
-    .roles{
+    .roles {
         display: flex;
         flex-direction: column;
         padding: 20px;
         padding-block: 50px;
     }
 
-    .role{
+    .role {
 
-        h1{
+        h1 {
             font-size: 30px;
         }
 
-        p{
+        p {
             font-size: 20px;
         }
     }
