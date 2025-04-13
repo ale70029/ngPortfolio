@@ -14,7 +14,7 @@
 
             border-radius: 5%;
             background-color: rgba(0, 0, 0, 0.207);
-            backdrop-filter: saturate(180%) blur(10px);
+            backdrop-filter:blur(10px);
             padding: 30px;
             
 
