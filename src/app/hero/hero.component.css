@@ -34,6 +34,7 @@
                 filter: invert(100%);
             }
         }
+
         a:hover {
             img {
                 filter: none;
@@ -48,7 +49,7 @@
         font-size: 90px;
         margin-left: 35%;
         margin-top: 6%;
-        
+
         p {
             font-size: 40px;
             font-family: "Jura";
@@ -82,16 +83,17 @@
 
 
 }
-.closeButton{
+
+.closeButton {
     position: fixed;
     top: 5%;
-    left: 93%;
+    left: 91%;
     font-size: 100px;
     color: white;
     z-index: 2000;
 }
 
-.closeButton:hover{
+.closeButton:hover {
     color: var(--color-accent);
 }
 
@@ -148,7 +150,7 @@
 
     }
 
-    .closeButton{
+    .closeButton {
         left: 37%;
         top: 5%;
     }
@@ -182,14 +184,15 @@
             margin-bottom: 4%;
         }
     }
-.closeButton{
-    left: 45%;
+
+    .closeButton {
+        left: 45%;
+    }
 }
-}
 
 
 
-/* ANIMATED BUTTON */
+/* ANIMATED BUTTON Author: Cole McCombs */
 
 .wrap {
     height: 100%;
@@ -197,9 +200,9 @@
     align-items: center;
     justify-content: center;
     z-index: 2;
-  }
-  
-  .button {
+}
+
+.button {
     min-width: 300px;
     min-height: 60px;
     display: inline-flex;
@@ -213,7 +216,7 @@
     font-weight: 700;
     color: #313133;
     background: var(--color-main);
-  background: linear-gradient(90deg, var(--color-main) 0%, var(--color-accent) 100%);
+    background: linear-gradient(90deg, var(--color-main) 0%, var(--color-accent) 100%);
     border: none;
     border-radius: 1000px;
     box-shadow: 12px 12px 24px rgba(236, 132, 5, 0.64);
@@ -222,10 +225,10 @@
     outline: none;
     position: relative;
     padding: 10px;
-    }
-  
-  .button::before {
-  content: '';
+}
+
+.button::before {
+    content: '';
     border-radius: 1000px;
     min-width: calc(300px + 12px);
     min-height: calc(60px + 12px);
@@ -237,22 +240,23 @@
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: all .3s ease-in-out 0s;
-  }
-  
-  .button:hover, 
-  .button:focus {
+}
+
+.button:hover,
+.button:focus {
     color: #313133;
     transform: translateY(-6px);
-  }
-  
-  .button:hover::before, 
-  .button:focus::before {
+}
+
+.button:hover::before,
+.button:focus::before {
     opacity: 1;
-  }
-  
-  .button::after {
+}
+
+.button::after {
     content: '';
-    width: 30px; height: 30px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     border: 6px solid var(--color-main);
     position: absolute;
@@ -261,23 +265,24 @@
     left: 50%;
     transform: translate(-50%, -50%);
     animation: ring 1.5s infinite;
-  }
-  
-  .button:hover::after, 
-  .button:focus::after {
+}
+
+.button:hover::after,
+.button:focus::after {
     animation: none;
     display: none;
-  }
-  
-  @keyframes ring {
+}
+
+@keyframes ring {
     0% {
-      width: 30px;
-      height: 30px;
-      opacity: 1;
+        width: 30px;
+        height: 30px;
+        opacity: 1;
     }
+
     100% {
-      width: 300px;
-      height: 300px;
-      opacity: 0;
+        width: 300px;
+        height: 300px;
+        opacity: 0;
     }
-  }
+}
