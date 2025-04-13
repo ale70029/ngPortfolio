@@ -1,4 +1,40 @@
 <div class="experience fadeIn">
+    <div class="grid">
+        <mat-card class="card" *ngFor="let experience of experiences$ | async; let i = index">
+            <mat-card-header class="header">
+                <div mat-card-avatar>
+                    <img src={{experience.imageSrc}} alt="AVATAR">
+                </div>
+                <mat-card-title>{{experience.role}}</mat-card-title>
+                <mat-card-subtitle>{{experience.organisation}}</mat-card-subtitle>
+                <span class="material-icons moreButton" (click)="showDetails(experience)">
+                    add
+                </span>
+
+            </mat-card-header>
+            <mat-card-content></mat-card-content>
+        </mat-card>
+    </div>
+
+
+    <div class="overlay" *ngIf="selectedExperience" (click)="closeDetails()">
+        <div class="selectedCard" (click)="$event.stopPropagation()">
+            <div class="header"><img src={{selectedExperience.imageSrc}} alt="AVATAR">
+                <span class="material-icons lessButton" (click)="closeDetails()">
+                    close
+                </span>
+            </div>
+
+            <h2>{{ selectedExperience.role }}</h2>
+            <h4>{{ selectedExperience.organisation }}</h4>
+            <ul>
+                <li *ngFor="let detail of selectedExperience.details">{{ detail }}</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<!-- <div class="experience fadeIn">
     <mat-card class="card" *ngFor="let experience of experiences$ | async; let i = index">
         <mat-card-header >
             <div mat-card-avatar>
@@ -13,4 +49,4 @@
             </ul>
         </mat-card-content>
     </mat-card>
-</div>
+</div> -->

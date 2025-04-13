@@ -7,6 +7,13 @@
    
 }
 
+.bg{
+    background-image: url('/assets/bg.jpg');
+    background-size: cover;        /* copre tutto il contenitore */
+    background-position: center;   /* centrato */
+    background-repeat: no-repeat;  /* niente ripetizioni */
+}
+
 .sidenav{
     background-color:rgba(0, 0, 0, 0.25) ;
     backdrop-filter: blur(10px);

@@ -1,21 +1,30 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {MatButtonModule} from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { DataService } from '../../services/data.service';
-import { AsyncPipe,NgFor } from '@angular/common';
+import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-experience',
-  imports: [NgFor, AsyncPipe,
+  imports: [NgFor,NgIf, AsyncPipe,
     MatCardModule, MatButtonModule],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ExperienceComponent implements OnInit{
+export class ExperienceComponent implements OnInit {
 
-constructor(private dataService:DataService){}
-experiences$: any
+  constructor(private dataService: DataService) { }
+  experiences$: any
+  selectedExperience: any = null;
+
+  showDetails(experience: any) {
+    this.selectedExperience = experience;
+  }
+
+  closeDetails() {
+    this.selectedExperience = null;
+  }
 
   ngOnInit(): void {
     this.experiences$ = this.dataService.loadJson(`data/${this.dataService.lang}/experience.json`)

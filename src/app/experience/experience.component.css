@@ -1,34 +1,110 @@
-.experience{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,33%);
-    justify-items: center;
-    margin: 5%;
+.experience {
 
-    .card{
-        margin-top: 10%;
-        max-width: 400px;
 
-        border-radius: 5%;
-        background-color: rgba(0, 0, 0, 0.207);
-        backdrop-filter:saturate(180%) blur(10px);
-        padding: 30px;
-    
-        img{
-            width: 40px;
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 33%);
+        margin-inline: 10%;
+        margin-top: 5%;
+        align-items: center;
+        justify-content: center;
+
+        .card {
+            margin-top: 10%;
+            max-width: 400px;
+
+            border-radius: 5%;
+            background-color: rgba(0, 0, 0, 0.207);
+            backdrop-filter: saturate(180%) blur(10px);
+            padding: 30px;
+
+
+            .header {
+
+                img {
+                    width: 110%;
+                }
+
+                .moreButton {
+                    margin-left: auto;
+                    margin-right: 0;
+                    justify-content: center;
+                    cursor: pointer;
+                    font-size: 250%;
+
+                }
+
+                .moreButton:hover {
+                    color: var(--color-main);
+                }
+            }
+
+            .details {
+                margin-left: -4%;
+            }
+
         }
 
-        .details{
-            margin-left: -4%;
+    }
+}
+
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .selectedCard {
+        background: var(--color-bg);
+        padding: 2%;
+        border-radius: 5%;
+        max-width: 30%;
+        width: 90%;
+        max-height: 80%;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                max-width: 20%;
+            }
+
+            .lessButton {
+                cursor: pointer;
+                font-size: 250%;
+            }
+
+            .lessButton:hover {
+                color: var(--color-main);
+            }
         }
     }
-
 }
 
 
 @media screen and (max-width: 830px) {
-.experience{
-    margin-top: 12%;
-    display: flex;
-    flex-direction: column;
-}
+    .experience {
+        margin-top: 12%;
+        display: flex;
+        flex-direction: column;
+
+        .overlay {
+            .selectedCard {
+                max-width: 80%;
+                padding: 5%;
+            }
+        }
+    }
 }
