@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
-import { RouterLink, RouterOutlet } from '@angular/router';
 import { AboutComponent } from "../about/about.component";
 import { NgIf } from '@angular/common';
 
@@ -8,7 +7,6 @@ import { NgIf } from '@angular/common';
   selector: 'app-hero',
   imports: [
     NgIf,
-    RouterLink,
     MatButtonModule,
     AboutComponent
 ],

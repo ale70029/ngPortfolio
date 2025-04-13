@@ -2,6 +2,7 @@
     height: 100%;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 
     background: linear-gradient(to right, var(--color-main) 25%, var(--color-bg) 25%);
 
