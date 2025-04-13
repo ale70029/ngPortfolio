@@ -64,14 +64,12 @@
         justify-content: center;
         align-items: center;
         margin-top: 2%;
-        gap: 5%;
+        margin-left: -4%;
     }
 
     .customButton {
         background-color: var(--color-soft);
         border: none;
-        font-size: 18px;
-        font-family: "Jura";
         color: var(--color-bg);
         width: 200px;
     }
