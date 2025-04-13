@@ -1,7 +1,4 @@
 .experience {
-
-
-
     .grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, 33%);
@@ -94,11 +91,19 @@
 }
 
 
+.landscapeError{
+    display: none;
+}
+
 @media screen and (max-width: 830px) {
     .experience {
         margin-top: 12%;
-        display: flex;
-        flex-direction: column;
+
+        .grid{
+            display: flex;
+            flex-direction: column;
+        }
+    
 
         .overlay {
             .selectedCard {
@@ -107,4 +112,20 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 830px) and (orientation:landscape) {
+    .landscapeError{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        justify-content: center;
+
+        p{
+            font-size: 100px;
+        }
+    }
+
+    .experience{display: none;}
 }
