@@ -1,6 +1,10 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #sidenav class="sidenav" mode="over" [opened]="false">
     <mat-nav-list class="routeList"> <!-- MOBILE SIDEBAR LINKS-->
+      <span class="material-icons closeButton" (click)="sidenav.close()">
+        close
+    </span>
+
       <a routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
         (click)="sidenav.close() ">
         Home</a>

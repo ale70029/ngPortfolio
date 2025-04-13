@@ -57,19 +57,6 @@
 }
 
 
-.routeList{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    margin-top: 50%;
-  
-    gap: 30px;
-    a{
-        font-size: 40px;
-        text-decoration: none;
-        color: white;
-    }
-}
 
 
 
@@ -98,6 +85,26 @@
 
     .active-link {
         color: var(--color-accent) !important;
-      }
+    }
+
+    
+.routeList{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 30%;
+  
+    gap: 30px;
+    a{
+        font-size: 40px;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+    .closeButton{
+        font-size: 100px;
+        top: 10%;
+    }
 
 }
