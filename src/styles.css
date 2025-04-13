@@ -33,12 +33,3 @@ body {
         opacity: 1;
     }
 }
-
-
-/* LOADING */
-.loading{
-    background-color: aqua;
-    z-index: 1000;
-    width: 100%;
-    height: 100%;
-}
