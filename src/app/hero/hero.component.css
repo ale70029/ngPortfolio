@@ -78,8 +78,21 @@
         background-color: var(--color-accent);
         color: white;
     }
+
+
+}
+.closeButton{
+    position: fixed;
+    top: 5%;
+    left: 93%;
+    font-size: 100px;
+    color: white;
+    z-index: 2000;
 }
 
+.closeButton:hover{
+    color: var(--color-accent);
+}
 
 
 
@@ -133,6 +146,11 @@
         }
 
     }
+
+    .closeButton{
+        left: 37%;
+        top: 5%;
+    }
 }
 
 /* MOBILE LANDSCAPE */
@@ -163,5 +181,7 @@
             margin-bottom: 4%;
         }
     }
-
+.closeButton{
+    left: 45%;
+}
 }

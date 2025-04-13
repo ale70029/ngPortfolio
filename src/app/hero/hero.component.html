@@ -18,7 +18,11 @@
         <span>{{name}}</span>
         <div class="buttons">
             <a mat-stroked-button [href]="curriculumLink" target="_blank" rel="noopener noreferrer" class="customButton">Scarica il mio cv</a>
-            <a mat-stroked-button routerLink="/about" class="customButton">Scopri di piu</a>
+            <a mat-stroked-button  class="customButton" (click)="showMoreToggle()">Scopri di piu</a>
         </div>
     </div>
 </div>
+<span class="material-icons closeButton" *ngIf="showMore" (click)="showMoreToggle()">
+    close
+  </span>
+<app-about *ngIf="showMore" class="overlay"></app-about>
