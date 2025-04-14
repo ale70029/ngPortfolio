@@ -269,7 +269,7 @@
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    border: 6px solid var(--color-main);
+    border: 6px solid var(--color-accent);
     position: absolute;
     z-index: -1;
     top: 50%;

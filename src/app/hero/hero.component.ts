@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
-import { AboutComponent } from "../about/about.component";
+import { AboutComponent } from "./about/about.component";
 import { NgIf } from '@angular/common';
 
 @Component({

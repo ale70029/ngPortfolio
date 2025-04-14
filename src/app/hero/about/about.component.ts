@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import { DataService } from '../../services/data.service';
+import { DataService } from '../../../services/data.service';
 import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 
 import {MatCardModule} from '@angular/material/card';
