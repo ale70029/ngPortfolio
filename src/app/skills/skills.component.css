@@ -1,14 +1,18 @@
+.skillsTabGroup{
+    margin-top: 6%;
+    height:85%;
+}
+
 .skillsContainer {
     display: flex;
     flex-wrap: wrap;
+    overflow-y: auto;
 
     margin: 2%;
     margin-right: 4%;
-    margin-top: 10%;
     gap: 5%;
     row-gap: 20px;
-
-
+    
     .skill {
         display: flex;
         flex-direction: column;
@@ -43,14 +47,40 @@
 
 @media screen and (max-width: 830px) {
 
+    .skillsTabGroup{
+        margin-top: 20%;
+    }
     .skillsContainer{
         margin: auto;
         margin-left: 5%;
-        margin-top: 20%;
+        margin-top: 5%;
 
         .skill{
             width: 40%;
-            height: 200px;
+            height: 160px;
+
+            background-color: rgba(0, 0, 0, 0.25);
+
+            img{
+                width: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 830px) and (orientation:landscape) {
+
+    .skillsTabGroup{
+        margin-top: 10%;
+        height: 100%;
+    }
+    .skillsContainer{
+        margin: auto;
+        margin-top: 5%;
+
+        .skill{
+            width: 20%;
+            height: 160px;
 
             background-color: rgba(0, 0, 0, 0.25);
 

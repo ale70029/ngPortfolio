@@ -1,15 +1,79 @@
-<div class="skills fadeIn">
-    <ul class="skillsContainer">
-      <li class="skill" *ngFor="let skill of skillsData$ | async">
-        <img [src]="skill.imageSrc" alt="icon" />
-        <h1>{{ skill.title}}</h1>
-      </li>
-    </ul>
-  </div>
-
-  <!-- {
-    "title": "Java",
-    "imageSrc": "skills/java.png",
-    "level" : "advanced",
-    "area" : "Backend"
-}, -->
+  <mat-tab-group class="skillsTabGroup">
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>border_all</mat-icon>
+        All
+      </ng-template>
+      <ul class="skillsContainer">
+        <li class="skill" *ngFor="let skill of skillsData$ | async">
+          <img [src]="skill.imageSrc" alt="icon" />
+          <h1>{{ skill.title}}</h1>
+        </li>
+      </ul>
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>build</mat-icon>
+        Backend
+      </ng-template>
+      <ul class="skillsContainer">
+        <li class="skill" *ngFor="let skill of backendSkills$ | async">
+          <img [src]="skill.imageSrc" alt="icon" />
+          <h1>{{ skill.title}}</h1>
+        </li>
+      </ul>
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>code</mat-icon>
+        Frontend
+      </ng-template>
+      <ul class="skillsContainer">
+        <li class="skill" *ngFor="let skill of frontendSkills$ | async">
+          <img [src]="skill.imageSrc" alt="icon" />
+          <h1>{{ skill.title}}</h1>
+        </li>
+      </ul>
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>data_object</mat-icon>
+        Data
+      </ng-template>
+      <ul class="skillsContainer">
+        <li class="skill" *ngFor="let skill of dataSkills$ | async">
+          <img [src]="skill.imageSrc" alt="icon" />
+          <h1>{{ skill.title}}</h1>
+        </li>
+      </ul>
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>featured_video</mat-icon>
+        IDE
+      </ng-template>
+      <ul class="skillsContainer">
+        <li class="skill" *ngFor="let skill of ideSkills$ | async">
+          <img [src]="skill.imageSrc" alt="icon" />
+          <h1>{{ skill.title}}</h1>
+        </li>
+      </ul>
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>computer</mat-icon>
+        OS
+      </ng-template>
+      <ul class="skillsContainer">
+        <li class="skill" *ngFor="let skill of osSkills$ | async">
+          <img [src]="skill.imageSrc" alt="icon" />
+          <h1>{{ skill.title}}</h1>
+        </li>
+      </ul>
+    </mat-tab>
+  </mat-tab-group>
