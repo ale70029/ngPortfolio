@@ -3,26 +3,31 @@
     <mat-nav-list class="routeList"> <!-- MOBILE SIDEBAR LINKS-->
       <span class="material-icons closeButton" (click)="sidenav.close()">
         close
-    </span>
+      </span>
 
       <a routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
         (click)="sidenav.close() ">
+        <span class="material-icons">home</span>
         Home</a>
 
       <a routerLink="/experience" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
         (click)="sidenav.close()">
+        <span class="material-icons">work</span>
         Experience</a>
 
       <a routerLink="/skills" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
         (click)="sidenav.close()">
+        <span class="material-icons">workspace_premium</span>
         Skills</a>
 
       <a routerLink="/projects" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
         (click)="sidenav.close()">
+        <span class="material-icons">construction</span>
         Projects</a>
 
       <a routerLink="/contacts" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
         (click)="sidenav.close()">
+        <span class="material-icons">alternate_email</span>
         Contacts</a>
     </mat-nav-list>
   </mat-sidenav>
@@ -35,13 +40,33 @@
 
       <!-- DESKTOP LINKS -->
       <div class="links">
-        <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-        <a routerLink="/experience" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Experience</a>
-        <a routerLink="/skills" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Skills</a>
-        <a routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Projects</a>
-        <a routerLink="/contacts" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Contacts</a>
+        <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="link">
+          <span class="material-icons">home</span>
+          Home
+        </a>
+
+        <a routerLink="/experience" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="link">
+          <span class="material-icons">work</span>
+          Experience
+        </a>
+
+        <a routerLink="/skills" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="link">
+          <span class="material-icons">workspace_premium</span>
+          Skills
+        </a>
+
+        <a routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="link">
+          <span class="material-icons">construction</span>
+          Projects
+        </a>
+
+        <a routerLink="/contacts" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="link">
+          <span class="material-icons">alternate_email</span>
+          Contacts
+        </a>
+
       </div>
-      
+
     </mat-toolbar>
 
     <router-outlet></router-outlet>
