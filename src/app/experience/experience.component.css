@@ -63,7 +63,8 @@
     justify-content: center;
 
     .selectedCard {
-        background: var(--color-bg);
+        background: var(--color-blur-hard);
+
         padding: 2%;
         border-radius: 5%;
         max-width: 30%;
