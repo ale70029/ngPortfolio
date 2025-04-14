@@ -45,11 +45,13 @@
 
 
     .title {
+        display: flex;
+        flex-direction: column;
         text-align: center;
         font-family: "Monoton";
         font-size: 90px;
-        margin-left: 35%;
-        margin-top: 6%;
+        margin-left: 46%;
+        margin-top: 6%;  
 
         p {
             font-size: 40px;
@@ -57,17 +59,19 @@
             margin-bottom: 0;
         }
 
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+            margin-left: -4%;
+        }
+    
+
     }
 
-    .buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2%;
-        margin-left: -4%;
-    }
-
+  
     .customButton {
         background-color: var(--color-soft);
         border: none;

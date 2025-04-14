@@ -16,7 +16,7 @@ import { NgIf } from '@angular/common';
 export class HeroComponent{
 
   showMore=false;
-  name = `ALESSANDRO\nCICCARONE`;
+  name = `ALESSANDRO CICCARONE`;
   constructor(){}
 
   showMoreToggle(){
