@@ -1,3 +1,5 @@
+
+
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #sidenav class="sidenav" mode="over" [opened]="false">
     <mat-nav-list class="routeList"> <!-- MOBILE SIDEBAR LINKS-->
@@ -32,7 +34,7 @@
     </mat-nav-list>
   </mat-sidenav>
 
-  <mat-sidenav-content class="bg">
+  <mat-sidenav-content>
     <mat-toolbar class="toolbar">
       <button mat-icon-button (click)="sidenav.toggle()" class="menu-button">
         <mat-icon>menu</mat-icon>
@@ -69,6 +71,10 @@
 
     </mat-toolbar>
 
-    <router-outlet></router-outlet>
+    <router-outlet>
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+    </router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
