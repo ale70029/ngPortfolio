@@ -9,36 +9,32 @@
     overflow-y: auto;
 
     margin: 2%;
-    margin-right: 4%;
     gap: 5%;
     row-gap: 20px;
     
     .skill {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        width: 10%;
-        height: 160px;
+        width: 15%;
+        height: 80px;
 
-
+        border-radius: 15px;
         background-color: var(--color-main);
-        border-radius: 5%;
         background-color: var(--color-blur);
         backdrop-filter: blur(10px);
 
         img {
-            width: 50%;
-            margin: 10%;
+            width: 20%;
+            margin: 5%;
 
         }
 
         h1 {
             text-transform: uppercase;
-            text-align: center;
             font-size: 100%;
-            margin-bottom: 10px;
             color: white;
+            margin-right: 5px;
         }
 
     }
@@ -56,13 +52,13 @@
         margin-top: 5%;
 
         .skill{
-            width: 40%;
-            height: 160px;
+            width: 80%;
+            height: 100px;
 
             background-color: rgba(0, 0, 0, 0.25);
 
             img{
-                width: 80px;
+                width: 70px;
             }
         }
     }
@@ -79,8 +75,8 @@
         margin-top: 5%;
 
         .skill{
-            width: 20%;
-            height: 160px;
+            width: 29%;
+            height: 100px;
 
             background-color: rgba(0, 0, 0, 0.25);
 
