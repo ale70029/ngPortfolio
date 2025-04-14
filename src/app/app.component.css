@@ -78,7 +78,7 @@
 
 
 /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
 
     
     .links {
@@ -128,6 +128,7 @@
 }
 
 
+/* BACKGROUND */
 .bg {
     animation:slide 50s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, var(--color-main) 50%, var(--color-accent) 50%);

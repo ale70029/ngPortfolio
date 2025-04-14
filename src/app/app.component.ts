@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, ViewChild } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 
 
@@ -24,4 +24,14 @@ import { MatListModule } from '@angular/material/list';
 })
 export class AppComponent {
   title = 'Portfolio';
+
+
+  @ViewChild('sidenav') sidenav!: MatSidenav;
+
+  @HostListener('window:resize', [])
+  onResize() {
+    if (window.innerWidth > 768 && this.sidenav.opened) {
+      this.sidenav.close();
+    }
+  }
 }
