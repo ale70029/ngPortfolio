@@ -10,15 +10,8 @@
             <mat-card-content>
             </mat-card-content>
             <p>{{project.shortDescription}}</p>
-            <mat-card-actions>
-
-                <div class="links">
-                    <button mat-button (click)="showDetails(project)">DETTAGLI</button>
-                    <a mat-button *ngFor="let link of project.links | keyvalue" [href]="link.value" target="_blank"
-                        rel="noopener noreferrer">
-                        {{ link.key }}
-                    </a>
-                </div>
+            <mat-card-actions class="buttonsArea">
+                <button mat-button (click)="showDetails(project)">DETTAGLI</button>
             </mat-card-actions>
         </mat-card>
     </div>

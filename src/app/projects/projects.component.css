@@ -38,11 +38,20 @@
                 font-size: 15px;
             }
 
-            .links{
+            .buttonsArea{
                 display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
+                flex-direction: column;
+
+                .links{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-self: left;
+                }
+
             }
+
+           
         }
     }
 }
@@ -69,7 +78,7 @@
         background: var(--color-blur-hard);
         padding: 2%;
         gap: 15px;
-        border-radius: 5%;
+        border-radius: 15px;
         max-width: 40%;
         width: 90%;
         max-height: 80%;
@@ -77,6 +86,7 @@
 
         img {
             max-width: 80%;
+            max-height: 300px;
         }
 
         p {
@@ -108,6 +118,7 @@
     .overlay {
         .selectedCard {
             max-width: 80%;
+            max-height: 90%;
             padding: 5%;
         }
     }
