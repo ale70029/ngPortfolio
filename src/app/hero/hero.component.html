@@ -23,8 +23,9 @@
             </div>
         </div>
     </div>
+    <!-- ABOUT -->
+    <span class="material-icons closeButton" *ngIf="showMore" (click)="showMoreToggle()">
+        close
+    </span>
+    <app-about *ngIf="showMore" class="overlay"></app-about>
 </div>
-<span class="material-icons closeButton" *ngIf="showMore" (click)="showMoreToggle()">
-    close
-</span>
-<app-about *ngIf="showMore" class="overlay"></app-about>
