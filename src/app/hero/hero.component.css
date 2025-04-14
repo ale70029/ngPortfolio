@@ -222,7 +222,7 @@
     text-align: center;
     letter-spacing: 1.3px;
     font-weight: 700;
-    color: #313133;
+    color: white;
     background: var(--color-main);
     background: linear-gradient(90deg, var(--color-main) 0%, var(--color-accent) 100%);
     border: none;
