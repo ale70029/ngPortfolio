@@ -1,3 +1,45 @@
-<div class="projectsPage fadeIn">
-    <p>projects works!</p>
+<div class="projectsPage">
+    <div class="projects">
+        <mat-card class="project" appearance="outlined" *ngFor="let project of projects$ | async">
+            <mat-card-header>
+                <mat-card-title>{{project.title}}</mat-card-title>
+                <mat-card-subtitle>
+                </mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="{{project.imageSrc}}" alt="project image">
+            <mat-card-content>
+            </mat-card-content>
+            <p>{{project.shortDescription}}</p>
+            <mat-card-actions>
+
+                <div class="links">
+                    <button mat-button (click)="showDetails(project)">DETTAGLI</button>
+                    <a mat-button *ngFor="let link of project.links | keyvalue" [href]="link.value" target="_blank"
+                        rel="noopener noreferrer">
+                        {{ link.key }}
+                    </a>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
+
+<div class="overlay" *ngIf="selectedProject" (click)="closeDetails()">
+    <div class="selectedCard" (click)="$event.stopPropagation()">
+        <span class="material-icons lessButton" (click)="closeDetails()">
+            close
+        </span>
+        <mat-chip-set>
+            <mat-chip *ngFor="let skill of selectedProject.skills">{{ skill }}</mat-chip>
+        </mat-chip-set>
+        <img src={{selectedProject.imageSrc}} alt="project picture">
+        <p>{{ selectedProject.description }}</p>
+
+        <div class="links">
+            <a mat-button *ngFor="let link of selectedProject.links | keyvalue" [href]="link.value" target="_blank"
+            rel="noopener noreferrer">
+            {{ link.key }}
+        </a>
+        </div>
+    </div>
 </div>
