@@ -5,6 +5,7 @@
     --color-main: rgb(220, 96, 1);
     --color-accent: rgb(255, 182, 56);
     --color-soft : rgb(243, 137, 37) ;
+    --color-blur : rgba(0, 0, 0, 0.3);
 }
 
 html,

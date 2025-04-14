@@ -13,7 +13,7 @@
             max-width: 400px;
 
             border-radius: 5%;
-            background-color: rgba(0, 0, 0, 0.207);
+            background-color: var(--color-blur);
             backdrop-filter:blur(10px);
             padding: 30px;
             
@@ -55,7 +55,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(30px);
     background: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     display: flex;
