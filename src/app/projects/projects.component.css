@@ -97,3 +97,24 @@
         }
     }
 }
+
+@media screen and (max-width: 830px) {
+
+    .project {
+        left: 10%;
+        top: 50px;
+    }
+
+    .overlay {
+        .selectedCard {
+            max-width: 80%;
+            padding: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 830px) and (orientation:landscape) {
+    .project{
+        left: 2%;
+    }
+}
