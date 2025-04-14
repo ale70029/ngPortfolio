@@ -11,7 +11,7 @@
             </mat-card-content>
             <p>{{project.shortDescription}}</p>
             <mat-card-actions class="buttonsArea">
-                <button mat-button (click)="showDetails(project)">DETTAGLI</button>
+                <button mat-button style="color:var(--color-main)" (click)="showDetails(project)">DETTAGLI</button>
             </mat-card-actions>
         </mat-card>
     </div>
@@ -29,10 +29,10 @@
         <p>{{ selectedProject.description }}</p>
 
         <div class="links">
-            <a mat-button *ngFor="let link of selectedProject.links | keyvalue" [href]="link.value" target="_blank"
-            rel="noopener noreferrer">
-            {{ link.key }}
-        </a>
+            <a mat-button style="color:var(--color-main)" *ngFor="let link of selectedProject.links | keyvalue"
+                [href]="link.value" target="_blank" rel="noopener noreferrer">
+                {{ link.key }}
+            </a>
         </div>
     </div>
 </div>
