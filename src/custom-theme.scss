@@ -23,6 +23,11 @@ html {
     inactive-label-text-color: black,
     label-text-size:20px,
   ));
+}
 
-
+:root {
+  @include mat.select-overrides((
+    panel-background-color: rgba(0, 0, 0, 0.567),
+    enabled-trigger-text-color: rgb(255, 145, 0),
+  ));
 }

@@ -5,6 +5,8 @@
         close
       </span>
 
+      <div class="languageButtonMobile"><ng-container *ngTemplateOutlet="languageSelector"></ng-container></div>
+
       <a routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
         (click)="sidenav.close() ">
         <span class="material-icons">home</span>
@@ -66,13 +68,9 @@
         </a>
 
       </div>
-      <mat-form-field>
-        <mat-select [value]="getLanguage()">
-            <mat-option value="it" (click)="changeLanguage('it')">Italiano</mat-option>
-            <mat-option value="en" (click)="changeLanguage('en')">English</mat-option>
-            <mat-option value="es" (click)="changeLanguage('es')">Español</mat-option>
-        </mat-select>
-      </mat-form-field>
+
+      <div class="languageButtonDesktop"> <ng-container *ngTemplateOutlet="languageSelector"></ng-container> </div>
+
 
     </mat-toolbar>
 
@@ -83,3 +81,15 @@
     </router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+
+<!-- LANGUAGE SELECTION -->
+<ng-template #languageSelector>
+  <mat-form-field>
+    <mat-select [value]="getLanguage()">
+      <mat-option value="it" (click)="changeLanguage('it')">Italiano</mat-option>
+      <mat-option value="en" (click)="changeLanguage('en')">English</mat-option>
+      <mat-option value="es" (click)="changeLanguage('es')">Español</mat-option>
+    </mat-select>
+  </mat-form-field>
+</ng-template>

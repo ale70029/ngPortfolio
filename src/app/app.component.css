@@ -20,14 +20,21 @@
 
 }
 .toolbar {
-    display: flex;
+
     justify-content: space-between;
-    align-items: center;
-    justify-content: center;
     position: fixed;
     z-index: 500;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    .languageButtonDesktop{
+        display: flex;
+        margin-top: 20px;
+        
+    }
+    .languageButtonMobile{
+        display: none;
+    }
 }
 .menu-button {
     display: none;
@@ -99,6 +106,13 @@
         background-color: transparent;
         backdrop-filter: none;
         box-shadow:none;
+
+        .languageButtonDesktop{
+            display: none;
+        }
+        .languageButtonMobile{
+            display: flex;
+        }
     }
 
     .active-link {
