@@ -30,6 +30,7 @@
     .languageButtonDesktop{
         display: flex;
         margin-top: 20px;
+        margin-left: 20px;
         
     }
     .languageButtonMobile{
@@ -129,7 +130,7 @@
   
     gap: 30px;
     a{
-        font-size: 40px;
+        font-size: 30px;
         text-decoration: none;
         color: white;
     }
@@ -142,6 +143,16 @@
 
 }
 
+
+@media screen and (max-width: 830px) and (orientation:landscape) {
+    .links {
+    
+        a {
+            color: var(--color-main);
+            font-size: 15px;
+        }
+    }
+}
 
 /* BACKGROUND */
 .bg {
