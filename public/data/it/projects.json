@@ -35,7 +35,7 @@
     {
       "title": "Bloggie - ASP.NET MVC",
       "shortDescription":"Blog creato seguendo un tutorial ASP.NET MVC su Udemy.",
-      "description":"Blog creato seguendo un tutorial su ASP.NET MVC su Udemy. Con questo progetto ho avuto l’opportunità di migliorare le mie competenze su DbContext, autorizzazioni, ASP.NET MVC ed altro ancora.",
+      "description":"Blog creato seguendo un tutorial su ASP.NET MVC su Udemy. Con questo progetto ho avuto l'opportunità di migliorare le mie competenze su DbContext, autorizzazioni, ASP.NET MVC ed altro ancora.",
       "imageSrc": "assets/projects/bloggie.png",
       "skills": ["ASP.NET MVC", "Razor", "C#","HTML","Bootstrap"],
       "links": {
