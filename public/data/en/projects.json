@@ -1,79 +1,54 @@
 [
-    {
-      "title": 
-        {
-          "it":"Portfolio Web 3.0",
-          "en":"Web Portfolio 3.0",
-          "es":"Portafolio web 3.0"
-        },
-      "description":
-        {
-          "it":"Ho ideato questo sito usando Figma e l'ho creato usando React, CSS e JavaScript.",
-          "en":"I designed this website with Figma and created it with React, CSS and JavaScript.",
-          "es":"He diseñado esta página web con Figma y la he creado utilizando Node, React, CSS y JavaScript."
-        },
-      "imageSrc": "projects/webportfolio.png",
+  {
+    "title": "Angular Portfolio",
+    "shortDescription":"My first website with Angular.",
+    "description":"I created this website to practice using Angular. I built a custom service to handle the loading of JSON files. I used Observables,AsyncPipe and NgFor to create custom cards from the JSON data. I used Angular Material for the navbar, the skills page and for some other components. Also this is fully responsive in both portrait and landscape mode.",
+    "imageSrc": "assets/projects/ngPortfolio.png",
+    "skills": ["Angular", "TypeScript","CSS","HTML","Angular Material"],
+    "links": {
+      
+       "GitHub": "https://github.com/ale70029/ngPortfolio"
+    }
+  },
+  {
+      "title": "React Portfolio",
+      "shortDescription":"My first website ever!",
+      "description":"I first designed this with Figma, then i made it from scratch with CSS, JS and React. I used Vite to easily preview the mobile version. I made everything on my own exept for the toolbar that i took from Bootstrap.",
+      "imageSrc": "assets/projects/webportfolio.png",
       "skills": ["React", "JavaScript", "CSS","HTML","Bootstrap"],
       "links": {
+         "Visita el sitio": "https://alessandro-ciccarone.netlify.app",
          "Figma": "https://www.figma.com/community/file/1431344962389112939",
          "GitHub": "https://github.com/ale70029/portoflio_website"
       }
-     
     },
     {
-      "title": 
-        {
-          "it":"Bloggie - ASP.NET MVC (in corso di sviluppo)",
-          "en":"Bloggie - ASP.NET MVC (under development)",
-          "es":"Bloggie - ASP.NET MVC (en desarrollo) "
-        },
-      "description":
-        {
-          "it":"Ho creato questo Blog con la tecnologia ASP.NET MVC seguendo un tutorial su Udemy.",
-          "en":"I created this Blog with ASP.NET MVC following an online course on Udemy.",
-          "es":"He desarrolado este Blog con ASP.NET MVC siguendo un curso online de Udemy."
-        },
-      "imageSrc": "projects/bloggie.png",
-      "skills": ["ASP.NET MVC", "Razor", "C#","HTML","Bootstrap"],
-      "links": {
-         
-         "GitHub": "https://github.com/ale70029/Bloggie"
-      }
-     
-    },
-    {
-      "title": 
-        {
-          "it":"JBubbleBobble",
-          "en":"JBubbleBobble",
-          "es":"JBubbleBobble"
-        },
-      "description":
-        {
-          "it": "Ho sviluppato questo gioco per un esame universitario, seguendo il modello MVC con Java. Attualmente sto realizzando una versione migliorata priva delle limitazioni scolastiche.",
-          "en": "I made this game for a University project using Java, following MVC pattern. I am currently working on an improved version without the school limitations.",
-          "es": "Desarrollé este juego para un examen universitario, siguiendo el modelo MVC con Java. Actualmente estoy realizando una versión mejorada sin las limitaciones escolares."
-        }, 
-      "imageSrc": "projects/JBubbleBobble.png",
+      "title": "JBubbleBobble",
+      "shortDescription": "A reimagining of Bubble Bobble written in Java.",
+      "description": "I developed this game for a university exam, following the MVC pattern with Java. I'm currently working on an improved version without the academic limitations.",
+      "imageSrc": "assets/projects/JBubbleBobble.png",
       "skills": ["Java", "MVC Pattern"],
       "links": {
          "GitHub": "https://github.com/ale70029/JBubbleBobble_1"
       }
     },
     {
-      "title": 
-        {
-          "it":"PowerBI Reports",
-          "en":"PowerBI Reports",
-          "es":"PowerBI Reports"
-        },
-      "description":
-        {
-          "it":"Un paio di report realizzati con PowerBi durante il corso Data Analyst di Epicode",
-          "en":"A couple of reports made with PowerBI during the 'Data Analyst' Course by Epicode",
-          "es":"Un par de informes realizados con Power BI durante el curso de Data Analyst en Epicode."
-        }, 
-      "imageSrc": "projects/PBReports.png",
+      "title": "Bloggie - ASP.NET MVC",
+      "shortDescription":"Blog created following an ASP.NET MVC tutorial on Udemy.",
+      "description":"Blog created following an ASP.NET MVC tutorial on Udemy. With this project i had the chance to improve my skills on DbContext, Authorization, the ASP.NET MVC and more.",
+      "imageSrc": "assets/projects/bloggie.png",
+      "skills": ["ASP.NET MVC", "Razor", "C#","HTML","Bootstrap"],
+      "links": {
+         "GitHub": "https://github.com/ale70029/Bloggie"
+      }
+     
+    },
+
+    {
+      "title": "PowerBI Reports",
+      "shortDescription":"A couple of reports created with Power BI during the Data Analyst course at Epicode.",
+      "description":"One report presents data on employment in Italy, and another is designed to manage a predefined business model. I had the opportunity to practice data collection from multiple sources and to create charts and layout the report using Power BI.",
+      "imageSrc": "assets/projects/PBReports.png",
       "skills": ["PowerBI"],
       "links": {
          "GitHub": "https://github.com/ale70029/Epicode-Projects",
@@ -81,4 +56,3 @@
       }
     }
   ]
-  

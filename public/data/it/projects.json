@@ -2,7 +2,7 @@
   {
     "title": "Portfolio Angular",
     "shortDescription":"Il mio primo sito con Angular!",
-    "description":"Ho ideato questo sito usando Figma e l'ho creato usando React, CSS e JavaScript.",
+    "description":"Ho creato questo sito web per esercitarmi con Angular. Ho realizzato un servizio personalizzato per gestire il caricamento dei file JSON. Ho utilizzato Observables, AsyncPipe e NgFor per creare delle card personalizzate a partire dai dati JSON. Ho usato Angular Material per la navbar, per la pagina delle competenze e per altri componenti. Inoltre, il sito è fruibile anche da mobile sia in modalità verticale che orizzontale.",
     "imageSrc": "assets/projects/ngPortfolio.png",
     "skills": ["Angular", "TypeScript","CSS","HTML","Angular Material"],
     "links": {
@@ -13,7 +13,7 @@
   {
       "title": "Portfolio React",
       "shortDescription":"Il mio primo sito web!",
-      "description":"Ho ideato questo sito usando Figma e l'ho creato usando React, CSS e JavaScript.",
+      "description":"Ho ideato questo sito usando Figma e l'ho creato usando React, CSS e JavaScript. Ho usato Vite per visualizzare facilmente l'anteprima della versione mobile. Ho realizzato tutto da solo, tranne la barra di navigazione che ho preso da Bootstrap. Il sito è disponibile anche in versione mobile.",
       "imageSrc": "assets/projects/webportfolio.png",
       "skills": ["React", "JavaScript", "CSS","HTML","Bootstrap"],
       "links": {
@@ -35,7 +35,7 @@
     {
       "title": "Bloggie - ASP.NET MVC",
       "shortDescription":"Blog creato seguendo un tutorial ASP.NET MVC su Udemy.",
-      "description":"Ho creato questo Blog con la tecnologia ASP.NET MVC seguendo un tutorial su Udemy.",
+      "description":"Blog creato seguendo un tutorial su ASP.NET MVC su Udemy. Con questo progetto ho avuto l’opportunità di migliorare le mie competenze su DbContext, autorizzazioni, ASP.NET MVC ed altro ancora.",
       "imageSrc": "assets/projects/bloggie.png",
       "skills": ["ASP.NET MVC", "Razor", "C#","HTML","Bootstrap"],
       "links": {
@@ -47,7 +47,7 @@
     {
       "title": "PowerBI Reports",
       "shortDescription":"Un paio di report realizzati con PowerBi durante il corso Data Analyst di Epicode",
-      "description":"Un paio di report realizzati con PowerBi durante il corso Data Analyst di Epicode",
+      "description":"Un report che espone dati sull'occupazione in Italia, ed un altro per gestire un modello aziendale predefinito. Ho avuto l'occasione di esercitarmi con la raccolta dei dati da più fonti e la creazione di grafici ed impaginazione del report con PowerBI.",
       "imageSrc": "assets/projects/PBReports.png",
       "skills": ["PowerBI"],
       "links": {
