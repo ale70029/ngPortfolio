@@ -10,6 +10,17 @@ export class DataService {
   public language = new BehaviorSubject<string>('it');
   constructor(private http: HttpClient) { }
 
+  
+  getLanguage(){
+    let lang = this.language.getValue();
+    switch(lang){
+      case "it" : return "Italiano";
+      case "en" : return "English";
+      case "es" : return "Español";
+      default : return "Error";
+    }
+  }
+
   changeLanguage(lang: string) {
     this.language.next(lang);
   }

@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
-import { AsyncPipe, NgFor } from '@angular/common';
+import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
 import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 
 
 @Component({
   selector: 'app-skills',
-  imports: [NgFor, AsyncPipe,
+  imports: [NgFor,NgIf, AsyncPipe,
     MatIconModule,MatTabsModule
   ],
   templateUrl: './skills.component.html',
@@ -18,6 +19,8 @@ export class SkillsComponent implements OnInit{
 
   constructor(private dataService:DataService){}
 
+  text$!:Observable<any[]>
+  //SKILLS LOADING
   skillsData$:any
   backendSkills$:any
   frontendSkills$:any
@@ -47,8 +50,11 @@ export class SkillsComponent implements OnInit{
    );
   }
 
+  //--
+
   ngOnInit(): void {
     this.assignTabs();
+    this.text$=this.dataService.loadJSON("misc");
   }
 
 

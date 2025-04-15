@@ -1,9 +1,9 @@
-  <mat-tab-group class="skillsTabGroup fadeIn">
+  <mat-tab-group class="skillsTabGroup fadeIn" *ngIf="text$ |async as text">
 
     <mat-tab>
       <ng-template mat-tab-label>
         <mat-icon>border_all</mat-icon>
-        All
+        {{text[0].all}}
       </ng-template>
       <ul class="skillsContainer">
         <li class="skill" *ngFor="let skill of skillsData$ | async">

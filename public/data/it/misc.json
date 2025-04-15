@@ -1,10 +1,10 @@
 [{
     "lang": "Italiano",
 
-    "navExperience": "Esperienza",
-    "navSkills": "Competenze",
-    "navProjects": "Progetti",
-    "navContact": "Contatti",
+    "Experience": "Esperienza",
+    "Skills": "Competenze",
+    "Projects": "Progetti",
+    "Contacts": "Contatti",
 
     "showMore" : "Scopri di più",
 
