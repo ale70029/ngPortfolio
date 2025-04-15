@@ -1,4 +1,4 @@
-<div class="hero">
+<div class="hero" *ngIf="text$ | async as text">
     <div class="links">
         <a href="https://github.com/ale70029">
             <img src="assets\contacts\githubIcon.png" alt="github">
@@ -19,7 +19,7 @@
         <span>CICCARONE</span>
         <div class="buttons">
             <div class="wrap">
-                <button class="button" (click)="showMoreToggle()">Scopri di più</button>
+                <button class="button" (click)="showMoreToggle()">{{text[0].showMore}}</button>
             </div>
         </div>
     </div>

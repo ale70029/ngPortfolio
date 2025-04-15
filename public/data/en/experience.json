@@ -17,7 +17,7 @@
         "SQL Server",
         "Life Skills"
        ],
-       "experiences":["Web page design using HTML, React, JavaScript, CSS",
+       "details":["Web page design using HTML, React, JavaScript, CSS",
        "Implementation of web applications following the ASP.NET MVC model, using C# and JQuery",
        "Database management through T-SQL and SQL Server Management Studio",
        "Life skills workshop [60h]"],
@@ -39,7 +39,7 @@
         "Google Looker Studio",
         "Microsoft Access"
       ],
-      "experiences":[
+      "details":[
         "Advanced use of Microsoft Excel, Pivot tables and charts, calculated columns",
         "Database management through SQL, SSMS, Microsoft Access",
         "In-depth study of relational databases",
@@ -67,7 +67,7 @@
         "CSS",
         "HTML"
         ],
-        "experiences": ["ASP.NET MVC Complete Guide using .NET Core [.NET8 Updated]",
+        "details": ["ASP.NET MVC Complete Guide using .NET Core [.NET8 Updated]",
         "The Python Mega Course: Build 10 Real World Applications",
         "React JS Frontend Web Development for Beginners"
        ],
@@ -87,7 +87,7 @@
         "MVC Pattern",
         "UML"
         ],
-        "experiences":[
+        "details":[
           "Programming methodologies (Java, MVC Pattern) [30L]",
           "Programming fundamentals (Python) [30L]",
           "Mathematical methods for computer science [28]",
@@ -107,7 +107,7 @@
         "Adobe Photoshop",
         "Adobe Illustrator"
         ],
-        "experiences":[
+        "details":[
           "In-depth study of Adobe Photoshop",
           "Design and creation of logos, posters, brochures, billboards, product packaging, and promotional materials",
           "Study and application of photographic techniques"

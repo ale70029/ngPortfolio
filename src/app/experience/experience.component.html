@@ -1,5 +1,5 @@
-<div class="experience fadeIn">
-    <div class="grid" *ngIf="experiences$ | async as experiences">
+<div class="experience fadeIn" *ngIf="experiences$ | async as experiences">
+    <div class="grid" >
         <mat-card class="card" *ngFor="let experience of experiences">
             <mat-card-header class="header">
                 <div mat-card-avatar>

@@ -1,23 +1,29 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import { AboutComponent } from "./about/about.component";
-import { NgIf } from '@angular/common';
+import { AsyncPipe, NgIf } from '@angular/common';
+import { DataService } from '../../services/data.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-hero',
   imports: [
-    NgIf,
+    NgIf,AsyncPipe,
     MatButtonModule,
     AboutComponent
 ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })
-export class HeroComponent{
+export class HeroComponent implements OnInit{
 
   showMore=false;
   name = `ALESSANDRO CICCARONE`;
-  constructor(){}
+  text$!:Observable<any[]>
+  constructor(private dataService:DataService){}
+  ngOnInit(): void {
+   this.text$=this.dataService.loadJSON("misc");
+  }
 
   showMoreToggle(){
     this.showMore = !this.showMore;
