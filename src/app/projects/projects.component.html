@@ -1,6 +1,6 @@
 <div class="projectsPage">
-    <div class="projects">
-        <mat-card class="project" appearance="outlined" *ngFor="let project of projects$ | async">
+    <div class="projects" *ngIf="projects$ | async as projects">
+        <mat-card class="project" appearance="outlined" *ngFor="let project of projects">
             <mat-card-header>
                 <mat-card-title>{{project.title}}</mat-card-title>
                 <mat-card-subtitle>

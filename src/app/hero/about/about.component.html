@@ -1,6 +1,6 @@
 <div class="about fadeIn">
-  <ul class="roles">
-    <li class="role" *ngFor="let about of aboutData$ | async">
+  <ul class="roles" *ngIf="aboutData$ | async as abouts">
+    <li class="role" *ngFor="let about of abouts">
       <img [src]="about.icon" alt="icon" />
       <h1>{{ about.title}}</h1>
       <p>{{ about.description}}</p>

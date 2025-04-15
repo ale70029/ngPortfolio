@@ -3,6 +3,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { DataService } from '../../services/data.service';
 import { AsyncPipe, NgFor, NgIf } from '@angular/common';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-experience',
@@ -15,7 +16,7 @@ import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 export class ExperienceComponent implements OnInit {
 
   constructor(private dataService: DataService) { }
-  experiences$: any
+  experiences$!: Observable<any[]>;
   selectedExperience: any = null;
 
   showDetails(experience: any) {
@@ -27,6 +28,6 @@ export class ExperienceComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.experiences$ = this.dataService.loadJson(`data/${this.dataService.lang}/experience.json`)
+    this.experiences$ = this.dataService.loadJSON("experience");
   }
 }

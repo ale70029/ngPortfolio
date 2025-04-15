@@ -5,12 +5,13 @@ import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { Observable } from 'rxjs';
 
 
 @Component({
   selector: 'app-about',
   imports: [
-    NgFor, AsyncPipe,
+    NgFor,NgIf, AsyncPipe,
     MatCardModule,MatGridListModule
   ],
   templateUrl: './about.component.html',
@@ -20,9 +21,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
 export class AboutComponent implements OnInit {
 
   constructor(private dataService: DataService){}
-  aboutData$ : any
+  aboutData$! : Observable<any[]>
 
   ngOnInit(): void {
-    this.aboutData$ = this.dataService.loadJson(`data/${this.dataService.lang}/about.json`);
+    this.aboutData$ = this.dataService.loadJSON("about");
   }
 }

@@ -25,26 +25,30 @@ export class SkillsComponent implements OnInit{
   ideSkills$:any
   osSkills$:any
 
+  assignTabs(){
+    this.skillsData$ = this.dataService.loadJSON("skills");
+    this.backendSkills$ = this.skillsData$.pipe(
+     map((skills: any[]) => skills.filter(skill => skill.area === 'Backend'))
+   );
+   this.frontendSkills$ = this.skillsData$.pipe(
+     map((skills: any[]) => skills.filter(skill => skill.area === 'Frontend'))
+   );
+ 
+   this.dataSkills$ = this.skillsData$.pipe(
+     map((skills: any[]) => skills.filter(skill => skill.area === 'Data'))
+   );
+ 
+   this.ideSkills$ = this.skillsData$.pipe(
+     map((skills: any[]) => skills.filter(skill => skill.area === 'IDE'))
+   );
+ 
+   this.osSkills$ = this.skillsData$.pipe(
+     map((skills: any[]) => skills.filter(skill => skill.area === 'OS'))
+   );
+  }
+
   ngOnInit(): void {
-   this.skillsData$ = this.dataService.loadJson(`data/${this.dataService.lang}/skills.json`);
-   this.backendSkills$ = this.skillsData$.pipe(
-    map((skills: any[]) => skills.filter(skill => skill.area === 'Backend'))
-  );
-  this.frontendSkills$ = this.skillsData$.pipe(
-    map((skills: any[]) => skills.filter(skill => skill.area === 'Frontend'))
-  );
-
-  this.dataSkills$ = this.skillsData$.pipe(
-    map((skills: any[]) => skills.filter(skill => skill.area === 'Data'))
-  );
-
-  this.ideSkills$ = this.skillsData$.pipe(
-    map((skills: any[]) => skills.filter(skill => skill.area === 'IDE'))
-  );
-
-  this.osSkills$ = this.skillsData$.pipe(
-    map((skills: any[]) => skills.filter(skill => skill.area === 'OS'))
-  );
+    this.assignTabs();
   }
 
 

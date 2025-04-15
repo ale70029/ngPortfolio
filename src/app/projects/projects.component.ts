@@ -4,6 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { AsyncPipe, KeyValuePipe, NgFor, NgIf } from '@angular/common';
 import { MatChipsModule } from '@angular/material/chips';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-projects',
@@ -17,22 +18,15 @@ import { MatChipsModule } from '@angular/material/chips';
 })
 export class ProjectsComponent implements OnInit{
   constructor(private dataService:DataService){}
-
-  projects$:any
+  projects$!: Observable<any[]>;
   selectedProject: any = null;
 
-  showDetails(experience: any) {
-    this.selectedProject = experience;
-  }
+  showDetails(project: any) {this.selectedProject = project;}
 
-  closeDetails() {
-    this.selectedProject = null;
-  }
+  closeDetails() {this.selectedProject = null;}
 
   ngOnInit(): void {
-    this.projects$ =this.dataService.loadJson(`data/${this.dataService.lang}/projects.json`);
+    this.projects$ = this.dataService.loadJSON('projects');
   }
-
-
 
 }
