@@ -22,7 +22,7 @@
       "Gestión de bases de datos a través de T-SQL y SQL Server Management Studio",
       "Taller de habilidades para la vida [60h]"
     ],
-    "imageSrc": "history/enaip.png"
+    "imageSrc": "assets/experience/enaip.png"
   },
   {
     "role": "Analista de datos",
@@ -45,7 +45,7 @@
       "Web scraping y estudio de licencias de datos",
       "Producción de informes con Microsoft Power BI y Google Looker Studio"
     ],
-    "imageSrc": "history/epicode.png"
+    "imageSrc": "assets/experience/epicode.png"
   },
   {
     "role": "Varios cursos",
@@ -68,7 +68,7 @@
       "The Python Mega Course: Build 10 Real World Applications",
       "React JS Frontend Web Development for Beginners"
     ],
-    "imageSrc": "history/udemy.png"
+    "imageSrc": "assets/experience/udemy.png"
   },
   {
     "role": "Informática",
@@ -87,7 +87,7 @@
       "Métodos matemáticos para la informática [28]",
       "Idioma inglés [Apto]"
     ],
-    "imageSrc": "history/sapienza.png"
+    "imageSrc": "assets/experience/sapienza.png"
   },
   {
     "role": "Técnico en Diseño Gráfico y Publicidad",
@@ -103,6 +103,6 @@
       "Diseño y creación de logotipos, carteles, folletos, vallas publicitarias, empaques de productos y materiales promocionales",
       "Estudio y aplicación de técnicas fotográficas"
     ],
-    "imageSrc": "history/minIstr.png"
+    "imageSrc": "assets/experience/minIstr.png"
   }
 ]

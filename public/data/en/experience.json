@@ -21,7 +21,7 @@
        "Implementation of web applications following the ASP.NET MVC model, using C# and JQuery",
        "Database management through T-SQL and SQL Server Management Studio",
        "Life skills workshop [60h]"],
-      "imageSrc": "history/enaip.png"
+      "imageSrc": "assets/experience/enaip.png"
     },
 
 
@@ -47,7 +47,7 @@
         "Web scraping and study of data licenses",
         "Report production with Microsoft Power BI and Google Looker Studio"
       ],
-      "imageSrc": "history/epicode.png"
+      "imageSrc": "assets/experience/epicode.png"
     },
     
     
@@ -71,7 +71,7 @@
         "The Python Mega Course: Build 10 Real World Applications",
         "React JS Frontend Web Development for Beginners"
        ],
-      "imageSrc": "history/udemy.png"
+      "imageSrc": "assets/experience/udemy.png"
     },
 
 
@@ -93,7 +93,7 @@
           "Mathematical methods for computer science [28]",
           "English language [Qualified]"
         ],
-      "imageSrc": "history/sapienza.png"
+      "imageSrc": "assets/experience/sapienza.png"
     },
 
 
@@ -112,7 +112,7 @@
           "Design and creation of logos, posters, brochures, billboards, product packaging, and promotional materials",
           "Study and application of photographic techniques"
         ],
-      "imageSrc": "history/minIstr.png"
+      "imageSrc": "assets/experience/minIstr.png"
     }
   ]
   
