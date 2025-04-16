@@ -87,9 +87,26 @@
 <ng-template #languageSelector>
   <mat-form-field>
     <mat-select [value]="getLanguage()">
-      <mat-option value="it" (click)="changeLanguage('it')">Italiano</mat-option>
-      <mat-option value="en" (click)="changeLanguage('en')">English</mat-option>
-      <mat-option value="es" (click)="changeLanguage('es')">Español</mat-option>
+      <mat-select-trigger>
+        <div class="languageLine languageLineSelected"> <img src={{getLanguageIcon()}} alt="itIcon" />
+          <p>{{getLanguageName()}}</p>
+        </div>
+      </mat-select-trigger>
+      <mat-option value="it" (click)="changeLanguage('it')">
+        <div class="languageLine"> <img src="assets/hero/it.png" alt="itIcon" />
+          <p>Italiano</p>
+        </div>
+      </mat-option>
+      <mat-option value="en" (click)="changeLanguage('en')">
+        <div class="languageLine"> <img src="assets/hero/en.png" alt="itIcon" />
+          <p>English</p>
+        </div>
+      </mat-option>
+      <mat-option value="es" (click)="changeLanguage('es')">
+        <div class="languageLine"> <img src="assets/hero/es.png" alt="itIcon" />
+          <p>Español</p>
+        </div>
+      </mat-option>
     </mat-select>
   </mat-form-field>
 </ng-template>

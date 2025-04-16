@@ -7,8 +7,8 @@ html {
   @include mat.theme((
     color: (
       theme-type: dark,
-      primary: mat.$azure-palette,
-      tertiary: mat.$blue-palette,
+      primary: mat.$orange-palette,
+      tertiary: mat.$orange-palette,
     ),
     typography: Roboto,
     density: 0,
@@ -22,12 +22,5 @@ html {
     active-label-text-color: white,
     inactive-label-text-color: black,
     label-text-size:20px,
-  ));
-}
-
-:root {
-  @include mat.select-overrides((
-    panel-background-color: rgba(0, 0, 0, 0.567),
-    enabled-trigger-text-color: rgb(255, 145, 0),
   ));
 }

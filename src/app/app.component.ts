@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { AsyncPipe, CommonModule } from '@angular/common';
 
@@ -10,7 +10,7 @@ import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatSelectModule } from '@angular/material/select';
+import { MatOption, MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { DataService } from '../services/data.service';
 import { Observable } from 'rxjs';
@@ -23,10 +23,10 @@ import { Observable } from 'rxjs';
     CommonModule,AsyncPipe,
     RouterOutlet,RouterLink,RouterLinkActive,FormsModule,
     MatToolbarModule,MatButtonModule, MatIconModule,MatSidenavModule,MatListModule,
-    MatFormFieldModule,MatSelectModule,MatInputModule
+    MatFormFieldModule,MatSelectModule,MatInputModule,MatOption
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent implements OnInit{
   title = 'Portfolio';
@@ -47,9 +47,19 @@ export class AppComponent implements OnInit{
   }
   //--
 
-  getLanguage(): string {
+  getLanguage():string{
     return this.dataService.language.getValue();
   }
+  getLanguageName(): string {
+    return this.dataService.getLanguage();
+  }
+  getLanguageIcon(): string {
+    return "assets/hero/"+this.dataService.language.getValue().toString()+".png";
+  }
+
+  // getLanguageName():string {
+
+  // }
 
   changeLanguage(lang:string){
     this.dataService.changeLanguage(lang);

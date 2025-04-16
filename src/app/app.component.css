@@ -28,14 +28,17 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     .languageButtonDesktop{
-        display: flex;
-        margin-top: 20px;
+        display: flex; 
         margin-left: 20px;
         
     }
     .languageButtonMobile{
         display: none;
     }
+
+    
+
+      
 }
 .menu-button {
     display: none;
@@ -121,25 +124,32 @@
     }
 
     
-.routeList{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    margin-top: 30%;
-    margin-left: 20%;
-  
-    gap: 30px;
-    a{
-        font-size: 30px;
-        text-decoration: none;
-        color: white;
+    .routeList{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        margin-top: 15%;
+        margin-left: 20%;
+    
+        gap: 30px;
+        a{
+            font-size: 30px;
+            text-decoration: none;
+            color: white;
+        }
     }
-}
 
     .closeButton{
-        font-size: 100px;
-        top: 10%;
+        font-size: 80px;
+        transform: translateX(-18px);
+
+
     }
+
+    .languageLineSelected{
+        margin-top:-10px;
+     }
+    
 
 }
 
@@ -149,7 +159,7 @@
     
         a {
             color: var(--color-main);
-            font-size: 15px;
+            font-size: 13px;
         }
     }
 }
@@ -183,4 +193,20 @@
     100% {
       transform:translateX(25%);
     }
-  }
+
+ }
+
+ .languageLine{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 0%;
+
+    img{
+        height: 20px;
+    }
+ }
+ .languageLineSelected{
+    margin-bottom: -10px;
+ }
