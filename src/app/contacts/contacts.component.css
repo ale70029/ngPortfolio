@@ -91,6 +91,7 @@
             height: 1px;
             background-color: var(--color-accent);
             color: var(--color-accent);
+
           }
         
     }
@@ -139,6 +140,9 @@
                     font-size: 18px;
                     color: var(--color-accent);
                 }
+            }
+            hr{
+                margin-bottom: 50px;
             }
             
         }
