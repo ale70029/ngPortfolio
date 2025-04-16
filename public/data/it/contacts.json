@@ -15,7 +15,7 @@
         "icon": "assets/contacts/linkedinIcon.png"
     },
     {
-        "title": "Linkedin",
+        "title": "Mail",
         "link" :  "mailto:alessandro.ciccarone1994@gmail.com",
         "icon": "assets/contacts/emailIcon.png"
     }
