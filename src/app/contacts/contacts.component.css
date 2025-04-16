@@ -33,10 +33,11 @@
         a:hover{
             color: var(--color-main);
         }
+
     }
 
     .credits{
-        width: 80%;
+        width: 60%;
         margin-top: 30px;
         background-color: rgba(0, 0, 0, 0.7);
         border-radius: 15px;
@@ -54,28 +55,94 @@
             margin-block: 15px;
 
         }
+        ul{
+            padding: 0;
+        }
+        li {
+            list-style: none;
+          }
 
-        li{
+        .line{
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 10px;
-        }
-        .author{
-            font-size: 20px;
-            color: var(--color-main);
+                flex-direction: row;
+                align-items: center;
+                justify-content: left;
+                gap: 10px;
+    
+            .author{
+                font-size: 20px;
+                color: var(--color-main);
+    
+            }
+            .title{
+                font-size: 18px;
+                color: white;
+            }
+    
+            a{
+                text-decoration: none;
+                font-size: 18px;
+                color: var(--color-accent);
+            }
 
         }
-        .title{
-            font-size: 18px;
-            color: white;
-        }
-
-        a{
-            text-decoration: none;
-            font-size: 18px;
+        hr {
+            width: 100%;
+            height: 1px;
+            background-color: var(--color-accent);
             color: var(--color-accent);
+          }
+        
+    }
+}
+
+@media screen and (max-width:830px) {
+
+    .contactPage{
+        .links{
+            width: 90%;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            
+     
+            a{
+                font-size: 18px;
+                img{
+                    height: 40px;
+                }
+            }
+    
+        }
+    
+        .credits{
+            width: 90%;
+            .line{
+                flex-direction: column;
+                justify-content: left;
+                align-items: flex-start;
+                .author{
+                    font-size: 20px;
+                    color: var(--color-main);
+                    margin: 2px;
+
+        
+                }
+                .title{
+                    font-size: 18px;
+                    color: white;
+                    margin: 2px;
+                }
+        
+                a{
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: var(--color-accent);
+                }
+            }
+            
         }
     }
+    
+    
 }
