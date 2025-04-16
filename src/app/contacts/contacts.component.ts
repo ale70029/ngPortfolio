@@ -1,11 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data.service';
+import { Observable } from 'rxjs';
+import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-contacts',
-  imports: [],
+  imports: [NgFor,NgIf,AsyncPipe],
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.css'
 })
-export class ContactsComponent {
-  curriculumLink = "https://github.com/ale70029/ngPortfolio/raw/bd5a3099c48e08d14810d49abf7dd660e3c697fb/public/data/CV%20Alessandro%20Ciccarone.pdf";
+export class ContactsComponent implements OnInit{
+  constructor(private dataService:DataService){}
+
+  contacts$!:Observable<any[]>
+  credits$!:Observable<any[]>
+  text$!:Observable<any[]>
+
+  ngOnInit(): void {
+    this.contacts$ = this.dataService.loadJSON("contacts");
+    this.credits$ = this.dataService.loadJSON("credits");
+    this.text$ = this.dataService.loadJSON("misc");
+  }
+
 }

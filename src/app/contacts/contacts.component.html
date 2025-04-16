@@ -1,7 +1,23 @@
-<div class="contactPage fadeIn">
-    <a mat-stroked-button [href]="curriculumLink" target="_blank" rel="noopener noreferrer"class="customButton">
-        Scarica il mio cv
-    </a>
-    
-    <p>contacts works!</p>
+<div class="contactPage fadeIn" >
+
+    <div class="links" *ngIf="contacts$ | async as contacts">
+        <a *ngFor="let contact of contacts" href={{contact.link}} target="_blank" rel="noopener noreferrer">
+            <img src={{contact.icon}} alt="icon">
+            {{contact.title}}
+        </a>
+    </div>
+
+
+    <div class="credits"*ngIf="text$ | async as text">
+        <p class="creditsTitle">{{text[0].credits}}</p>
+        <ul *ngIf="credits$ | async as credits">
+            <li *ngFor="let credit of credits">
+                <p class="author">{{credit.author}}</p>
+                <p class="title">{{credit.title}}</p>
+                <a *ngIf="credit.link" href={{credit.link}} target="_blank" rel="noopener noreferrer">
+                    Link
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
